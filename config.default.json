@@ -1,0 +1,21 @@
+{
+    "lr": 1e-6,
+
+    "entropy_bonus": 1e-5,
+
+    "num_epochs": 20000,
+    "time_limit": 4000,
+    "num_episodes_per_epoch": 10,
+    "sample_rate": 0.05,
+
+    "batch_size": 32,
+    "num_agents": 12,
+    "episodes_preemption": 1,
+
+    "num_valid_instances": 20,
+    "num_valid_seeds": 5,
+    "validate_every": 50,
+
+    "gpu": 0,
+    "seed": 0
+}
