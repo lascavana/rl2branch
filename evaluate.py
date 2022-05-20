@@ -42,24 +42,24 @@ if __name__ == "__main__":
     time_limit = 3600
 
     if args.problem == 'setcover':
-        instances += [{'type': 'test', 'path': f"data/instances/setcover/test_400r_750c_0.05d/instance_{i+1}.lp"} for i in range(20)]
-        instances += [{'type': 'transfer', 'path': f"data/instances/setcover/transfer_500r_1000c_0.05d/instance_{i+1}.lp"} for i in range(20)]
+        instances += [{'type': 'test', 'path': f"data/instances/setcover/test_400r_750c_0.05d/instance_{i+1}.lp"} for i in range(40)]
+        instances += [{'type': 'transfer', 'path': f"data/instances/setcover/transfer_500r_1000c_0.05d/instance_{i+1}.lp"} for i in range(40)]
 
     elif args.problem == 'cauctions':
-        instances += [{'type': 'test', 'path': f"data/instances/cauctions/test_100_500/instance_{i+1}.lp"} for i in range(20)]
-        instances += [{'type': 'transfer', 'path': f"data/instances/cauctions/transfer_200_1000/instance_{i+1}.lp"} for i in range(20)]
+        instances += [{'type': 'test', 'path': f"data/instances/cauctions/test_100_500/instance_{i+1}.lp"} for i in range(40)]
+        instances += [{'type': 'transfer', 'path': f"data/instances/cauctions/transfer_200_1000/instance_{i+1}.lp"} for i in range(40)]
 
     elif args.problem == 'ufacilities':
-        instances += [{'type': 'test', 'path': f"data/instances/ufacilities/test_35_35_5/instance_{i+1}.lp"} for i in range(20)]
-        instances += [{'type': 'transfer', 'path': f"data/instances/ufacilities/transfer_60_35_5/instance_{i+1}.lp"} for i in range(20)]
+        instances += [{'type': 'test', 'path': f"data/instances/ufacilities/test_35_35_5/instance_{i+1}.lp"} for i in range(40)]
+        instances += [{'type': 'transfer', 'path': f"data/instances/ufacilities/transfer_60_35_5/instance_{i+1}.lp"} for i in range(40)]
 
     elif args.problem == 'indset':
-        instances += [{'type': 'test', 'path': f"data/instances/indset/test_500_4/instance_{i+1}.lp"} for i in range(20)]
-        instances += [{'type': 'transfer', 'path': f"data/instances/indset/transfer_1000_4/instance_{i+1}.lp"} for i in range(20)]
+        instances += [{'type': 'test', 'path': f"data/instances/indset/test_500_4/instance_{i+1}.lp"} for i in range(40)]
+        instances += [{'type': 'transfer', 'path': f"data/instances/indset/transfer_1000_4/instance_{i+1}.lp"} for i in range(40)]
 
     elif args.problem == 'mknapsack':
-        instances += [{'type': 'test', 'path': f"data/instances/mknapsack/test_100_6/instance_{i+1}.lp"} for i in range(20)]
-        instances += [{'type': 'transfer', 'path': f"data/instances/mknapsack/transfer_100_12/instance_{i+1}.lp"} for i in range(20)]
+        instances += [{'type': 'test', 'path': f"data/instances/mknapsack/test_100_6/instance_{i+1}.lp"} for i in range(40)]
+        instances += [{'type': 'transfer', 'path': f"data/instances/mknapsack/transfer_100_12/instance_{i+1}.lp"} for i in range(40)]
 
     else:
         raise NotImplementedError
